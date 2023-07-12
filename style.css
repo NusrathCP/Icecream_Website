@@ -1,9 +1,6 @@
 @import url('https://www.1001fonts.com/chocolate-bar-demo-font.html');
 *{
     box-sizing: border-box;
-
-}
-body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,8 +18,8 @@ body{
     cursor: pointer;
 }
 img{
-    width: 60px;
-    height:60px;
+    width: 24px;
+    height:24px;
 }
 .navbar-links ul{
     margin: 0;
@@ -106,12 +103,13 @@ img{
     margin-left:1rem ;
     display:inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #ffffff;
+    border: 1px solid #000000;
     padding: 12px, 34px;
-    background: transparent;
     position: relative;
     cursor: pointer; 
+    /* font-weight: bold; */
+    background-color:rgb(29, 111, 121) ; ;
 }
 .display-btn:hover{
     border: 1pxsolid red;
@@ -124,6 +122,7 @@ img{
     margin: 1rem;
     text-align: center;
     color:rgb(100, 15, 51);
+    padding: 1rem;
 }
 
 .flavours{
@@ -145,7 +144,7 @@ img{
 }
 .image_container{
     width:100% ;
-    height: 350px;
+    height: 250px;
     overflow: hidden;
 }
 .image_container img{
@@ -163,6 +162,7 @@ img{
     margin: 1rem;
     text-align: center;
     color:rgb(100, 15, 51);
+    padding:1 rem;
 }
 .sellers{
     display: flex;
@@ -182,30 +182,249 @@ align-items: center;
     box-shadow:-10px 5px 26px ;
     overflow: hidden;
     text-align: center;
-    color:rgb(100, 15, 51); ;
+    color:rgb(88, 12, 44); 
 
 }
 
 .btn_buynow{
-    color: black;
-    background-color:03BBC7 ;
+    font-weight:bold ;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(29, 111, 121) ;
     padding: 12px 34px;
     cursor: pointer;
+    border-radius: 20px;
 }
 /* know us better */
-.section_four img{
+.section_four{
+    align-content: center;
+    width:100%;
+    
+}
+.better-title{
+    text-align: center;
+    color:rgb(88, 12, 44);
+}
+.better_container{ 
+    background-image: url(background\ image.jpg);
     width: 100%;
     height:100vh ;
-    opacity:60% ;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
 }
+
+.row{
+    margin-left: 100px;
+    margin-top: 20%;
+    display: flex;
+    column-gap:50px;
+    align-items: center;
+
+}
+.better_col{
+    text-align:center ;
+    margin-bottom: 5%;
+    padding: 20px 20px;
+    box-sizing: content-box;
+    width: auto;
+}
+.better_col img{
+    width: auto;
+    height: auto;
+    align-content: center;
+}
+.better_col h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+.better_col p{
+    font-size: 15px;
+    font-weight: bold;
+} 
+.better_btn{
+    font-weight:bold ;
+    color: rgb(255, 255, 255);
+    background-color:rgb(29, 111, 121) ;
+    padding: 12px 34px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/* surprise me */
+.surprise-me{
+    background-color: rgb(253, 247, 247);
+}
+.surprise-container{
+    margin-left:1rem;
+    width: 100%;
+    height:130vh ;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.surprise-left{
+    padding: 30px;
+    width: 40%;
+    align-self:flex-start;
+}
+.surprise-left h2{
+    text-align: center;
+    margin-top: 100px;
+    color:rgb(115, 10, 54);
+    margin-bottom:20px;
+}
+.surprise-left h3, h4 {
+    color: rgb(168, 29, 29);
+}
+.surprise-left p{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.surprise-right .row{
+    padding: 30px;
+    border: 1px solid #000000;
+    box-shadow:20px 20px -20px -20px black;
+    background-color: antiquewhite;
+}
+.s-right-col h3{
+    color: rgb(168, 29, 29);
+
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.input-group{
+    width: 300px;
+    display: flex;
+    position: relative;
+    margin:30px auto ;
+    flex-direction: column;
+}
+.input-group label{
+    color:rgb(92, 90, 90) ;
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+    transition: 0.5s ease-in-out;
+}
+.input-group input{
+    border: 1px solid black;
+    padding: 3px;
+    margin-top: 2px;
+    outline: none;
+    border-bottom: 1px solid rgb(33, 45, 43);
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+    color: red;
+    top: -10px;
+    font-size: 12px;
+}
+
+.surprise-btn{
+    font-weight:bold ;
+    color: rgb(255, 255, 255);
+    background-color:rgb(29, 111, 121) ;
+    padding: 12px 34px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* footer */
+ .footer{
+    background-color: rgb(126, 126, 123);
+    padding:0;
+} 
+ .footer-container{
+    max-width: 1170px;
+    margin-left: 1rem;
     
+}
+ ul{
+    list-style:none ;
+} 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{ 
+    margin-top: 10px;
+    width: 20%;
+    padding:0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: rgb(78, 10, 50); 
+    text-transform: capitalize;
+    margin-bottom: 20px; 
+    font-weight: bold; 
+    position: relative;
+}
+.o-address p{
+    line-height: 20px;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:rgb(252, 228, 239) ;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+} 
+.footer-col ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+    color:rgb(2, 27, 26);
+    text-decoration:none;
+    font-weight: 500px;
+    display: block;
+    transition: all 0.3s ease; 
+    padding: 5px;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+} 
+.footer-col .s-media a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0,2);
+    margin: 0 1px 0 1px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .s-media a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+} 
 
 
-
+/* copyright */
+.copy{
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+.copy img{
+    width: 10px;
+    height: 10px;
+}
 
 
 
